@@ -5,21 +5,21 @@
 class Projectscli < Formula
   desc "Manage project scaffolds from the command line"
   homepage "https://github.com/jackmorganxyz/projectsCLI"
-  version "0.0.5"
+  version "0.0.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jackmorganxyz/projectsCLI/releases/download/v0.0.5/projects_0.0.5_darwin_amd64.tar.gz"
-      sha256 "9dd7d456434314d5331432f20de51b620d61d0a8fb151cceea36f9524b80330f"
+      url "https://github.com/jackmorganxyz/projectsCLI/releases/download/v0.0.6/projects_0.0.6_darwin_amd64.tar.gz"
+      sha256 "ec3418144f87cd43c0f17b75f6d975dc733af98276a15533690be8d7459fef11"
 
       define_method(:install) do
         bin.install "projects"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jackmorganxyz/projectsCLI/releases/download/v0.0.5/projects_0.0.5_darwin_arm64.tar.gz"
-      sha256 "06d08d369429b41375afaea6831e108eedd147563936468481e93c97d23a849b"
+      url "https://github.com/jackmorganxyz/projectsCLI/releases/download/v0.0.6/projects_0.0.6_darwin_arm64.tar.gz"
+      sha256 "2f4a2a1d8e2ceb759c0dd61641593cb5021aa753f9e339228a8263a6c4a426df"
 
       define_method(:install) do
         bin.install "projects"
@@ -29,15 +29,15 @@ class Projectscli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jackmorganxyz/projectsCLI/releases/download/v0.0.5/projects_0.0.5_linux_amd64.tar.gz"
-      sha256 "d8fe678059f61dad9db10c543e7b0c7b3642cd4f9a0c8f9edec55d9e60011881"
+      url "https://github.com/jackmorganxyz/projectsCLI/releases/download/v0.0.6/projects_0.0.6_linux_amd64.tar.gz"
+      sha256 "1d813ef5e921c091922d4500d08bf86756f40fa15724796a734668013e51ebf7"
       define_method(:install) do
         bin.install "projects"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jackmorganxyz/projectsCLI/releases/download/v0.0.5/projects_0.0.5_linux_arm64.tar.gz"
-      sha256 "a4176be09ce2495fd5c94d25a70c50106bccf330a393c9f10ac34ed3a29b2140"
+      url "https://github.com/jackmorganxyz/projectsCLI/releases/download/v0.0.6/projects_0.0.6_linux_arm64.tar.gz"
+      sha256 "f5e6cd33fcdeaee1b79bee4f155948ba3b8178cbf7904594a5f3865ff98e9b26"
       define_method(:install) do
         bin.install "projects"
       end
